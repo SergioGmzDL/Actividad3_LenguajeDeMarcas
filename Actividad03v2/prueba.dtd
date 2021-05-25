@@ -1,0 +1,21 @@
+<!ELEMENT ite (empresa,telefono, profesores, director,jefe_estudios,ciclos)>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT profesores (profesor+)>
+<!ELEMENT profesor (id,nombre)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT director (nombre, despacho)>
+<!ELEMENT despacho (#PCDATA)>
+<!ELEMENT jefe_estudios (nombre, despacho)>
+<!ELEMENT ciclos (ciclo+)>
+<!ELEMENT ciclo (nombre, grado, decretoTitulo)>
+<!ELEMENT grado (#PCDATA)>
+<!ELEMENT decretoTitulo EMPTY>
+<!--ATIBUTOS-->
+<!ATTLIST ite
+            nombre CDATA #REQUIRED
+            web CDATA #REQUIRED>
+<!ATTLIST ciclo
+                id CDATA #REQUIRED>
+<!ATTLIST decretoTitulo año CDATA #REQUIRED>

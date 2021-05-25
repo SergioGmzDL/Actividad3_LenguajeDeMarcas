@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#General{
+
+    width: 1200px;
+    border: 1px solid rgb(17, 122, 192);
+    margin: 0px auto;
+    margin-top: 20px;
+    background-color: rgba(197, 224, 255, 0.027);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(56, 118, 189);
+    color: whitesmoke;
+    text-shadow: 1px 1px 10px black;
+    text-align: center;
+    min-height: 90px;
+    max-height: 90px;
+    display: table;
+}
+header>h1{
+    display: table-cell;
+    vertical-align: middle;
+
+}
+#menu{
+background-color: #eeeeee;
+border-bottom: 1px solid  #ccc;  
+}
+#menu>ul>li{
+    /*display: inline-block;*/
+    display: block;
+    float: left;
+    border-right: 2px solid #ccc;     
+}
+
+#menu>ul>li>a{
+    color: rgba(65, 63, 63, 0.897);
+    display: block;
+    padding: 10px;
+
+}
+#menu>ul>li:hover{
+    background-color: rgb(21, 106, 202);
+    cursor: pointer;
+}
+#menu>ul>li:hover>a{
+    color: white;
+    display: block;
+}
+.clearfix{
+    float: none;
+    clear: both;
+    display: table;
+}
+#contenido{
+    width: 100%;
+    padding: 20px;
+}
+#contenido>h3{
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+#contenido>table{
+    margin: 10px auto;
+    width: 70%;
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid;
+}
+td, th{
+    border: 1px solid #ddd;
+    padding: 12px 0;
+}
+th{
+    background-color: rgba(21, 105, 202, 0.459);
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+tr:not(:first-child):hover{
+    background-color: rgba(255, 145, 42, 0.430);
+}
+#contenido>.caja{
+    width: 70%;
+    min-height: 50px;
+    margin: 20px auto;
+    padding: 10px 0;
+    border: 1px solid rgb(15, 39, 66);
+    text-align: center;
+    line-height: 1.5em;
+    border-radius: 5px;
+    background-color:rgba(21, 106, 202,0.2);
+}
+#contenido>.caja>ul>li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+#contenido>.caja>ul>li>span{
+    font-weight: 900;
+    color: rgb(92, 151, 230);
+    margin-right: 5px;
+    font-weight: bold;
+}
+#contenido>form{
+    margin: 30px auto;
+    width: 80%;
+    font-size: 0.7em;
+}
+
+#contenido>form>fieldset>.bigBox{
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+#salmon{
+    background-color: rgba(255, 145, 42, 0.250);
+}
+#blue{
+    background-color:rgba(21, 106, 202,0.2);
+}
+#contenido>form>fieldset>fieldset{
+    border: none;
+    padding-top: 20px;
+}
+#contenido>form>fieldset>.bigBox>.box{
+    width: 32%;
+    min-height: 20px;
+    margin: 5px;
+    float: left;
+    line-height: 1.7em;
+}
+#contenido>form>fieldset>.bigBox>.box>ul{
+    list-style: none;
+}
+#contenido>form>fieldset>.bigBox>.box>ul>li>ul>li{
+    margin-left: 20px;
+    list-style: none;
+}
+#contenido>form>fieldset>.bigBox>.box2{
+    width: 65%;
+    min-height: 20px;
+    margin: 5px;
+    float: left;
+    line-height: 1.7em;
+}
+#contenido>form>fieldset>.bigBox>.box1{
+    width: 32%;
+    min-height: 20px;
+    margin: 5px;
+    float: left;
+    line-height: 1.7em;
+}
+#contenido>form>fieldset>.bigBox>.box>input[type=text], input[type=number], input[type=tel], input[type=date]{
+    width: 100%;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+#contenido>form>fieldset>.bigBox>.box>select{
+    width: 100%;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+#contenido>form>fieldset>.bigBox>.box2>input{
+    width: 100%;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+#contenido>form>fieldset>.bigBox>.box1>input{
+    width: 100%;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+.noBox>select{
+    margin-left: 5px;
+}
+.noBox>input{
+    width: 95%;
+    margin: 5px auto;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+input[type=checkbox]{
+    height: 10px;
+    width: 10px;
+}
+footer{
+    width: 100%;
+    height: 55px;
+    background: rgb(238, 238, 238);
+    text-align: center;
+    color: #4444;
+    line-height: 55px;
+    border-top: 1px solid #cccc;
+}
+#contenido>form>fieldset>.sub{
+    width: 90%;
+    margin: 0 auto;
+}
+#contenido>form>fieldset>.sub>input{
+    margin: 5px 10px;
+    padding: 2px 5px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+#contenido>form>fieldset>.sub>input:hover{
+    background-color: rgba(21, 105, 202, 0.459);
+    cursor: pointer;
+}
+
+
+
